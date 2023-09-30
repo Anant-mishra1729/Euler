@@ -5,10 +5,10 @@ using namespace std;
 
 // Sum of multiples
 int target = 999;
-int multipleSum(int n)
+int multipleSum(int num)
 {
-    int p = target / n;
-    return n * (p * (p + 1) / 2);
+    int n = target / num;
+    return num * (n * (n + 1) / 2);
 }
 
 void solve()
