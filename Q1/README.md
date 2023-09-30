@@ -24,32 +24,32 @@ int multipleSum(int target) {
 
 The optimal approach uses mathematical properties to calculate the sum of multiples of 3 or 5 more efficiently.
 
-### Sum of multiples of 3 to 999
+### Sum of multiples of 3 upto 1000
 
-$
-\text S = 3 + 6 + 9 + 12... + 999\\
-\text S = 3 (1 + 2 + 3 + 4 + ...+ 333)\\
-$
+$$
+\text S = 3 + 6 + 9 + 12... + 999 = 3 (1 + 2 + 3 + 4 + ...+ 333)
+$$
 
-Using formula for sum of natural numbers,
+Sum of natural numbers = $`n * \frac{n+1}{2}`$
 
-$
-\text S = 3 * n * \frac{n+1}{2}
-$ 
+$$
+\text{for n = 333} \implies \text S = 3 * n * \frac{n+1}{2}
+$$
 
-### Similarly, for sum of multiples of 5
-$
-S = 3 + 6 + 9 + 12... + 995\\
-\text S = 5 (1 + 2 + 3 + 4 + ...+ 199)\\
-\text{for n = 199}\\
-\text S = 5 * n * \frac{n+1}{2}
-$
+### Similarly, for the sum of multiples of 5 upto 1000
+$$
+\text S = 5 + 10 + 15 + 20... + 995 = 3 (1 + 2 + 3 + 4 + ...+ 199)
+$$
 
-After subtracting the multiples of 15 which are occuring twice in the total sum we get,
+$$
+\text{for n = 199} \implies \text S = 5 * n * \frac{n+1}{2}
+$$
 
-$
+After **subtracting the multiples of 15** which are occurring twice,
+
+$$
 \text{Sum of multiples of 3 or 5} = \text {Sum of multiples of 3 + Sum of multiples of 5 - Sum of multiples of 15}
-$
+$$
 
 ### Optimal solution
 ```cpp
