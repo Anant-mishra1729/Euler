@@ -64,3 +64,6 @@ void solve() {
     cout << multipleSum(3) + multipleSum(5) - multipleSum(15);
 }
 ```
+**Time complexity** : $`O(1)`$
+
+**Space complexity** : $`O(1)`$
